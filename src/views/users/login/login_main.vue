@@ -2,4 +2,4 @@
 
 <script lang="ts" src="./login_type.ts"></script>
 
-<style lang="scss" src="src/views/user/login/login_style.scss"></style>
+<style lang="scss" src="./login_style.scss"></style>

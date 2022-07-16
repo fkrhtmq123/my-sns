@@ -1,6 +1,7 @@
 import Vue from "vue";
 import VueRouter, { RouteConfig } from "vue-router";
 import main from "../views/index.vue";
+import login from "../views/users/login/login_main.vue";
 
 Vue.use(VueRouter);
 
@@ -10,12 +11,11 @@ const routes: Array<RouteConfig> = [
     name: "main",
     component: main,
   },
-  /*{
-    path: "/about",
-    name: "about",
-    component: () =>
-      import("../views/AboutView.vue"),
-  },*/
+  {
+    path: "/login",
+    name: "login",
+    component: login,
+  },
 ];
 
 const router = new VueRouter({
