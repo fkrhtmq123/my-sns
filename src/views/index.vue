@@ -9,11 +9,14 @@ import { Component, Vue } from "vue-property-decorator";
 
 @Component
 export default class Index extends Vue {
-  created(): void {
+  /*created(): void {
     const user = window.sessionStorage.user;
     if (!user) {
       this.$router.push("/login");
     }
+  }*/
+  mounted(): void {
+    this.$router.push("login");
   }
 }
 </script>

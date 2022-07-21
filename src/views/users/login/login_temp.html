@@ -5,17 +5,27 @@
     <div class="login-input">
       <div class="login-input-id">
         <label for="main-id">ID</label>
-        <input type="text" id="main-id" class="login-input-id-input">
+        <input
+          type="text"
+          id="main-id"
+          class="login-input-id-input"
+          v-model="loginPostPayload.userId"
+        >
       </div>
 
       <div class="login-input-password">
         <label for="main-password">PASSWORD</label>
-        <input type="password" id="main-password" class="login-input-password-input">
+        <input
+          type="password"
+          id="main-password"
+          class="login-input-password-input"
+          v-model="loginPostPayload.password"
+        >
       </div>
 
       <div class="login-input-button">
         <div id="main-button">
-          <img src="@/assets/img/login-btn.png" alt="">
+          <img src="@/assets/img/login-btn.png" alt="Login image" @click="login">
         </div>
       </div>
     </div>

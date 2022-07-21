@@ -1,7 +1,7 @@
 import { Users_inter_Get_Response } from "@/interface/users/users/user_inter";
 
 interface Login_inter_Post_Payload {
-  email?: string;
+  userId?: string;
   password?: string;
 }
 
